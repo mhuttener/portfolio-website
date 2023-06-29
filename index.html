@@ -14,37 +14,35 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="img/svg/logo.svg" alt="Logo MH">
+        <div class="container">
+            <img  class="logo" src="img/svg/logo.svg" alt="Logo MH">
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
-
     <main>
-        <div><!--hero section-->
-            <div>
+        <div id="hero"><!--hero section-->
+            <div class="container">
                 <h1>Hi, my name is Mário Hüttener</h1>
                 <p>I am an accomplished UI/UX designer with a background in biomedical research and teaching.</p>
             </div><!--end of hero section-->
 
-            <div><!--work section-->
-                <div>
+            <div class="container"><!--work section-->
+                <div id="work">
                     <h2>My Work</h2>
-                    <div><!--ROW-->
-                        <div><!--COLUMN 1-->
+                    <div class="row"><!--ROW-->
+                        <div>
                             <picture>
                                 <source srcset="img/work_img/ONA@600px.png" media="(max-width:767px)">
                                 <img src="img/work_img/ONA@600px.png" alt="OnA Case Study">
                             </picture>
                         </div>
-                        <div><!--COLUMN 2-->
+                        <div>
                             <h3>Out N About (OnA)</h3>
                             <p>Out and About (OnA) is a responsive web application that helps users discover events and
                                 activities nearby and simplifies ticket purchases. The app provides real-time
@@ -52,9 +50,8 @@
                                 about events and activities based on the user's location.</p>
                             <a href="ona.html" class="button">view case study</a>
                         </div>
-                    </div><!--END ROW-->
-                </div>
-                <div><!--Treria project-->
+                    </div>
+                    <div class="row"><!--Treria project-->
                     <picture>
                         <source srcset="img/work_img/Treria@600px.png" media="(max-width:767px)">
                         <img src="img/work_img/Treria@600px.png" alt="Treria Case Study">
@@ -63,8 +60,8 @@
                     <p>Treria is a native iOS and Android mobile app designed to provide travelers with an easy and
                         convenient way to book unique and exciting travel adventures to exotic locations.</p>
                     <a href="#" class="button">view case study</a>
-                </div>
-                <div><!--ThriftyGuard project-->
+                    </div>
+                    <div class="row"><!--ThriftyGuard project-->
                     <picture>
                         <source srcset="img/work_img/ThriftyGuard@600px.png" media="(max-width:767px)">
                         <img src="img/work_img/ThriftyGuard@600px.png" alt="ThriftyGuard@600px.png Case Study">
@@ -75,33 +72,33 @@
                         comprehensive view of the user's financial data, including spending patterns and expenses
                         breakdown.</p>
                     <a href="#" class="button">view case study</a>
-
+                    </div>
                 </div>
-            </div><!--end of work section-->
+            </div>
         </div>
     </main>
 
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
 
         </div>
-        <div>
+        <div class="container">
             <a href="mailto:mhuttener@gmail.com" class="button contact">Email me</a>
         </div>
-        <div>
+        <div class="container">
             <ul>
                 <li><a href="https://www.behance.net/mhuttener" target="_blank">
-                    <img src="img/svg/behance.svg" alt="Logo Behance"></a></li>
+                    <img class="social" src="img/svg/behance.svg" alt="Logo Behance"></a></li>
                 <li><a href="https://www.linkedin.com/in/mario-huttener" target="_blank">
-                    <img src="img/svg/linkedin.svg" alt="Logo Linkedin"></a></li>
+                    <img class="social" src="img/svg/linkedin.svg" alt="Logo Linkedin"></a></li>
             </ul>
             
             
 
         </div>
-        <div>
+        <div class="container">
             <p>Copyright Mário Hüttener 2023</p>
         </div>
 
