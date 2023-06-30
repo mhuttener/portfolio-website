@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Mário Hüttener</title>
     <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon/apple-touch-icon.png" sizes="180x180">
+    <title>About Mário Hüttener</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+
+<body id="about-page">
     <header>
         <div class="container">
-            <img class="logo" src="img/svg/logo.svg" alt="Logo MH">
+            <a href="index.html"> <img class="logo" src="img/svg/logo.svg" alt="Logo MH"> </a>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
@@ -29,56 +34,69 @@
     </header>
 
     <main>
-        <div id="hero">
+        <div id="about-title">
             <div class="container">
-                <div><!--CONTAINER-->
-                    <h1>About Me</h1>
-                    <div><!--ROW FOR COLUMNS-->
-                        <div><!--COLUMNS-->
-
-
-                            <img src="img/svg/mh_about_me.svg" alt="Mário Hüttener Picture">
-
-                            <h2>My Story</h2>
-                            <p>I'm a UI/UX Designer with a background in academic research. After many years in
-                                academia, I transitioned into the design industry and have since honed my skills in
-                                user-centered design, prototyping, and data-driven solutions. With a passion for
-                                creating clean, intuitive, and human-centered interfaces, I'm dedicated to delivering
-                                exceptional design outcomes that improve user experiences.</p>
-                            <a href="files/mario_huttener_resume.pdf" target="_blank">Download my resume</a>
-                        </div>
-                        <div>
-                            <h2>Skills & Tools</h2>
-                            <div>
-                                <h3>Relevant Skills</h3>
-                                <ul>
-                                    <li>User-Centered Design</li>
-                                    <li>Information Architecture</li>
-                                    <li>Wireframing</li>
-                                    <li>Design System</li>
-                                    <li>Prototyping</li>
-                                    <li>Branding</li>
-                                    <li>Responsive Grids</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                                <div>
-                                    <h3>Tools I Use</h3>
-                                    <ul>
-                                        <li>Figma</li>
-                                        <li>Sketch</li>
-                                        <li>Adobe XD</li>
-                                        <li>Adobe CC</li>
-                                        <li>InVision</li>
-                                        <li>Balsamiq</li>
-                                        <li>Marvel</li>
-                                    </ul>
+                <div class="row">
+                    <div class="column col-md-6 col-lg-7">
+                        <h1>About Me</h1>
+                    </div>
+                    <div id="about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="column col-md-6 col-lg-7">
+                                    <picture>
+                                        <source srcset="img/svg/mh_about_me.svg" media="(max-width:767px)">
+                                        <img src="img/svg/mh_about_me.svg" alt="Mário Hüttener Picture">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
-
-
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column col-md-6 col-lg-7">
+                        <h2>My Story</h2>
+                        <p>I'm a UI/UX Designer with a background in academic research. After many years in
+                            academia, I transitioned into the design industry and have since honed my skills in
+                            user-centered design, prototyping, and data-driven solutions. With a passion for
+                            creating clean, intuitive, and human-centered interfaces, I'm dedicated to delivering
+                            exceptional design outcomes that improve user experiences.</p>
+                        <a href="files/mario_huttener_resume.pdf" target="_blank" class="button contact">Download my
+                            resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-md-6 col-lg-5">
+                <h2>Skills &amp; Tools</h2>
+                <div class="row">
+                    <div class="column col-md-6 col-lg-5">
+                        <h3>Relevant Skills</h3>
+                        <ul>
+                            <li>User-Centered Design</li>
+                            <li>Information Architecture</li>
+                            <li>Wireframing</li>
+                            <li>Design System</li>
+                            <li>Prototyping</li>
+                            <li>Branding</li>
+                            <li>Responsive Grids</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="column col-md-6 col-lg-5">
+                        <h3>Tools I Use</h3>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Sketch</li>
+                            <li>Adobe XD</li>
+                            <li>Adobe CC</li>
+                            <li>InVision</li>
+                            <li>Balsamiq</li>
+                            <li>Marvel</li>
+                        </ul>
                     </div>
                 </div>
             </div>
