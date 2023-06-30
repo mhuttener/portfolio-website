@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon/apple-touch-icon.png" sizes="180x180">
     <title>Portfolio Mário Hüttener UI/UX Designer</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <img  class="logo" src="img/svg/logo.svg" alt="Logo MH">
+            <a href="index.html"> <img class="logo" src="img/svg/logo.svg" alt="Logo MH"></a>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
@@ -26,23 +32,24 @@
         </div>
     </header>
     <main>
-        <div id="hero"><!--hero section-->
+        <div id="hero">
             <div class="container">
-                <h1>Hi, my name is Mário Hüttener</h1>
-                <p>I am an accomplished UI/UX designer with a background in biomedical research and teaching.</p>
-            </div><!--end of hero section-->
-
-            <div class="container"><!--work section-->
-                <div id="work">
+                <h1> Hi There! <br /><span>You've found the Portfolio of Mário Hüttener</span></h1>
+                <h4>I am an accomplished UI/UX designer with a background in biomedical research and teaching.</h4>
+            </div>
+            <div id="work">
+                <!--work section-->
+                <div class="container">
                     <h2>My Work</h2>
-                    <div class="row"><!--ROW-->
-                        <div>
+                    <div class="row">
+                        <!--open row that holds (2) columns for project-->
+                        <div class="col-md-6">
                             <picture>
-                                <source srcset="img/work_img/ONA@600px.png" media="(max-width:767px)">
-                                <img src="img/work_img/ONA@600px.png" alt="OnA Case Study">
+                                <source srcset="img/work_img/ONA@1200px.png" media="(max-width:767px)">
+                                <img src="img/work_img/ONA@1200px.png" alt="OnA Case Study">
                             </picture>
                         </div>
-                        <div>
+                        <div class="col-md-6">
                             <h3>Out N About (OnA)</h3>
                             <p>Out and About (OnA) is a responsive web application that helps users discover events and
                                 activities nearby and simplifies ticket purchases. The app provides real-time
@@ -51,27 +58,40 @@
                             <a href="ona.html" class="button">view case study</a>
                         </div>
                     </div>
-                    <div class="row"><!--Treria project-->
-                    <picture>
-                        <source srcset="img/work_img/Treria@600px.png" media="(max-width:767px)">
-                        <img src="img/work_img/Treria@600px.png" alt="Treria Case Study">
-                    </picture>
-                    <h3>Treria</h3>
-                    <p>Treria is a native iOS and Android mobile app designed to provide travelers with an easy and
-                        convenient way to book unique and exciting travel adventures to exotic locations.</p>
-                    <a href="#" class="button">view case study</a>
+                    <div class="row">
+                        <!--open row that holds (2) columns for project-->
+                        <div class="col-md-6">
+                            <picture>
+                                <source srcset="img/work_img/Treria@1200px.png" media="(max-width:767px)">
+                                <img src="img/work_img/Treria@1200px.png" alt="Treria Case Study">
+                            </picture>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Treria</h3>
+                            <p>Treria is a native iOS and Android mobile app designed to provide travelers with an easy
+                                and
+                                convenient way to book unique and exciting travel adventures to exotic locations.</p>
+                            <a href="#" class="button">view case study</a>
+                        </div>
                     </div>
-                    <div class="row"><!--ThriftyGuard project-->
-                    <picture>
-                        <source srcset="img/work_img/ThriftyGuard@600px.png" media="(max-width:767px)">
-                        <img src="img/work_img/ThriftyGuard@600px.png" alt="ThriftyGuard@600px.png Case Study">
-                    </picture>
-                    <h3>ThriftyGuard</h3>
-                    <p>ThriftyGuard offers a responsive website and a mobile app that enables users to easily record
-                        their income and expenses from various devices while on the go. The tool provides a
-                        comprehensive view of the user's financial data, including spending patterns and expenses
-                        breakdown.</p>
-                    <a href="#" class="button">view case study</a>
+                    <div class="row">
+                        <!--open row that holds (2) columns for project-->
+                        <div class="col-md-6">
+                            <picture>
+                                <source srcset="img/work_img/ThriftyGuard@1200px.png" media="(max-width:767px)">
+                                <img src="img/work_img/ThriftyGuard@1200px.png" alt="ThriftyGuard Case Study">
+                            </picture>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>ThriftyGuard</h3>
+                            <p>ThriftyGuard offers a responsive website and a mobile app that enables users to easily
+                                record
+                                their income and expenses from various devices while on the go. The tool provides a
+                                comprehensive view of the user's financial data, including spending patterns and
+                                expenses
+                                breakdown.</p>
+                            <a href="#" class="button">view case study</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,12 +110,12 @@
         <div class="container">
             <ul>
                 <li><a href="https://www.behance.net/mhuttener" target="_blank">
-                    <img class="social" src="img/svg/behance.svg" alt="Logo Behance"></a></li>
+                        <img class="social" src="img/svg/behance.svg" alt="Logo Behance"></a></li>
                 <li><a href="https://www.linkedin.com/in/mario-huttener" target="_blank">
-                    <img class="social" src="img/svg/linkedin.svg" alt="Logo Linkedin"></a></li>
+                        <img class="social" src="img/svg/linkedin.svg" alt="Logo Linkedin"></a></li>
             </ul>
-            
-            
+
+
 
         </div>
         <div class="container">
