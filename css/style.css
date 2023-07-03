@@ -110,7 +110,7 @@ a:focus {
   }
 
   .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    margin: 40px 0; /* 40px top and bottom, 0 left and right */
   }
 
   .row::after {
@@ -141,6 +141,15 @@ a:focus {
     color: #4a4a4a;
   }
 
+  footer {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.linkedin > ul > li {
+  display: inline-block;
+}
+
 
   main {
     padding-top: 124px;
@@ -159,6 +168,7 @@ a:focus {
     position: fixed;
     width: 100%;
   }
+
 
   .social{
     max-width: 48px;
