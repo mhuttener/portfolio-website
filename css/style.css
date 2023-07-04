@@ -11,9 +11,9 @@
 body {
     background-color: #ffffff;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 18px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    font-size: 18px; 
+    font-weight: 300;
+    line-height: 1.6; 
     color: #4a4a4a;
   }
   
@@ -45,30 +45,18 @@ body {
 
   a {
     color: #007AFF;
-    text-decoration: none; /* No underlining */
-  }
-  
-  #hero {
-    background-color: #fffffe;
-    padding: 20px 0;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+    text-decoration: none;
   }
 
-  #hero span {
-    display: block;
-  }
-  
-  a:visited { /* visited link */
+  a:visited {
     color: #37353F;
   }
 
   a:hover,
-a:focus {
+  a:focus {
   color: #1e1e1e;
   text-decoration: underline;
-}
+  }
 
   a:active { /* selected link */
     color: #994c30;
@@ -79,20 +67,20 @@ a:focus {
   }
 
   .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block; 
     background-color: #BBB2D4;
-    color: #1e1e1e; /* needed to override the default link color */
+    color: #1e1e1e; 
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #4A4658; /* width of the border, type, color */
+    border-bottom: 2px solid #4A4658; 
     transition: 0.2s opacity;
 
   }
-  
+
   .button:hover {
-    opacity: 0.5; /* Reduces the opacity of the button to 50% */
+    opacity: 0.5;
     text-decoration: none;
   
   }
@@ -110,7 +98,7 @@ a:focus {
   }
 
   .row {
-    margin: 40px 0; /* 40px top and bottom, 0 left and right */
+    margin: 40px 0;
   }
 
   .row::after {
@@ -119,10 +107,13 @@ a:focus {
     display: table;
   }
 
-  #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+  #work .row { 
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a; 
+  }
 
   #hero h1 {
-    text-align: center; /* Centers text */
+    text-align: center;
   }
 
   nav > ul {
@@ -140,56 +131,121 @@ a:focus {
     font-weight: 700;
     color: #4a4a4a;
   }
-
-  footer {
-    padding: 20px 40px;
+  
+  #hero {
+    background-color: #fffffe;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
     text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
 }
 
-.linkedin > ul > li {
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+footer .button.contact {
+  background-color: transparent;
+  color: #37353f;
+  text-transform: uppercase;
+  border: 2px solid #37353f;
+  margin-bottom: 20px;
+}
+
+footer .button.contact:hover {
+  background-color: #37353f;
+  color: #ffffff;
+}
+
+footer .row {
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
   display: inline-block;
+  margin-right: 10px;
 }
 
+footer ul li:last-child {
+  margin-right: 0;
+}
 
-  main {
-    padding-top: 124px;
+footer .social {
+  max-width: 24px;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+main {
+  padding-top: 124px;
   }
   
-  header {
-    background-color: #fffffe;
-    padding: 10px;
-    border-bottom: 3px solid #4a4a4a;
-    text-align: center;
-    background: #F8F8F8; 
-    border: solid #BDBDBD 1px; 
-    box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.3); 
-    -webkit-box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.3); 
-    -moz-box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.3);
-    position: fixed;
-    width: 100%;
+header {
+  background-color: #fffffe;
+  padding: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  text-align: center;
+  background: #F8F8F8; 
+  border: solid #BDBDBD 1px; 
+  box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.3); 
+  -webkit-box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.3); 
+  -moz-box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
   }
 
-
-  .social{
-    max-width: 48px;
+.social{
+  max-width: 48px;
   }
 
-  .tools{
-    max-width: 125px;
+.tools{
+  max-width: 125px;
   }
 
-  .brandenburg{
+.brandenburg{
   width: 100%;
   max-width: 100%;
   height: auto;
   }
 
-  @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
   }
 
-  .sun {
+.sun {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
@@ -197,26 +253,26 @@ a:focus {
   animation-timing-function: linear;
   }
 
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
   }
 
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
   }
 
-  @keyframes cloud-move-reverse {
-    from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
   }
 
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
   /* ==============================
@@ -224,20 +280,21 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  text-align: unset;
+  padding: 20px 0 13px;
   }
   nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  width: auto;
+  float: right;
+  margin-top: 4px;
   }
+
   .col-md-6 {
-    width: 50%;
+  width: 50%;
   }
   [class*="col-"] {
-    float: left;
-    padding: 0 10px;
+  float: left;
+  padding: 0 10px;
   }
   #about-page h3 { margin-top: 0;
   } 
@@ -248,15 +305,15 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .col-lg-5 {
-    width: 41.66%;
+  width: 41.66%;
 }
 .col-lg-6 {
-    width: 58.33%;
-    padding-bottom: 32px;
+  width: 58.33%;
+  padding-bottom: 32px;
 }
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
 }
 }
