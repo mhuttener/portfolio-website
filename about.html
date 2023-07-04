@@ -35,41 +35,28 @@
 
     <main>
         <div class="container">
-            <div>
-                <h1>About Me</h1>
+            <h1>About Me</h1>
+            <div class="column col-md-6 col-lg-7">
+                <picture>
+                    <source srcset="img/svg/mh_about_me.svg" media="(max-width:767px)">
+                    <img class="column col-md-6 col-lg-7" src="img/svg/mh_about_me.svg" alt="Mário Hüttener Picture">
+                </picture>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div>
-                    <picture>
-                        <source srcset="img/svg/mh_about_me.svg" media="(max-width:767px)">
-                        <img class="column col-md-6 col-lg-7" src="img/svg/mh_about_me.svg"
-                            alt="Mário Hüttener Picture">
-                    </picture>
-                </div>
+            <div class="column col-md-6 col-lg-5">
+                <h2>My Story</h2>
+                <p>I'm a UI/UX Designer with a background in academic research. After many years in
+                    academia, I transitioned into the design industry and have since honed my skills in
+                    user-centered design, prototyping, and data-driven solutions. With a passion for
+                    creating clean, intuitive, and human-centered interfaces, I'm dedicated to delivering
+                    exceptional design outcomes that improve user experiences.</p>
+                <a href="files/mario_huttener_resume.pdf" target="_blank" class="button contact">Download my
+                    resume</a>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="column col-md-6 col-lg-7">
-                    <h2>My Story</h2>
-                    <p>I'm a UI/UX Designer with a background in academic research. After many years in
-                        academia, I transitioned into the design industry and have since honed my skills in
-                        user-centered design, prototyping, and data-driven solutions. With a passion for
-                        creating clean, intuitive, and human-centered interfaces, I'm dedicated to delivering
-                        exceptional design outcomes that improve user experiences.</p>
-                    <a href="files/mario_huttener_resume.pdf" target="_blank" class="button contact">Download my
-                        resume</a>
-                </div>
-            </div>
-        </div>
-        <div class="container">
             <div class="row">
                 <div class="column col-md-6 col-lg-7">
                     <h2>Skills &amp; Tools</h2>
                     <h3>Relevant Skills</h3>
-                    <ul>
+                    <ul class="skills-list">
                         <li>User-Centered Design</li>
                         <li>Information Architecture</li>
                         <li>Wireframing</li>
@@ -84,7 +71,7 @@
                 </div>
                 <div class="column col-md-6 col-lg-5">
                     <h3>Tools I Use</h3>
-                    <ul>
+                    <ul class="skills-list">
                         <li>Figma</li>
                         <li>Sketch</li>
                         <li>Adobe XD</li>
@@ -101,11 +88,8 @@
         <div class="container">
             <h2>Get in Touch</h2>
             <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-
         </div>
-        <div class="row">
-            <a href="mailto:mhuttener@gmail.com" class="button contact">Email me</a>
-        </div>
+        <a href="mailto:mhuttener@gmail.com" class="button contact">Email me</a>
         <div class="row">
             <ul>
                 <li><a href="https://www.behance.net/mhuttener" target="_blank">
@@ -117,7 +101,6 @@
         <div class="container">
             <p>Copyright Mário Hüttener 2023</p>
         </div>
-
     </footer>
     <script src="js/scripts.js"></script>
 </body>
