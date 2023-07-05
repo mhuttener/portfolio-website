@@ -63,12 +63,12 @@ body {
   }
 
   .logo {
-    max-width: 250px;
+    max-width: 200px;
   }
 
   .button {
     display: inline-block; 
-    background-color: #BBB2D4;
+    background-color: #bbb2d4;
     color: #1e1e1e; 
     font-weight: 400;
     text-decoration: none;
@@ -114,22 +114,6 @@ body {
 
   #hero h1 {
     text-align: center;
-  }
-
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-  }
-
-  nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
   }
   
   #hero {
@@ -209,14 +193,13 @@ footer p:last-child {
 }
 
 main {
-  padding-top: 124px;
+  padding-top: 56px;
   }
   
 header {
   background-color: #fffffe;
-  padding: 10px;
+  padding: 10px 0 4px;
   border-bottom: 3px solid #4a4a4a;
-  text-align: center;
   background: #F8F8F8; 
   border: solid #BDBDBD 1px; 
   box-shadow: 5px 5px 31px rgba(0, 0, 0, 0.3); 
@@ -275,10 +258,55 @@ header {
   animation: 34s cloud-move-reverse infinite alternate linear;
   }
 
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #bbb2d4;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
   text-align: unset;
   padding: 20px 0 13px;
@@ -288,7 +316,9 @@ Medium devices (640px and larger)
   float: right;
   margin-top: 4px;
   }
-
+  nav > ul {
+    margin: 1em 0;
+  }
   .col-md-6 {
   width: 50%;
   }
@@ -297,6 +327,18 @@ Medium devices (640px and larger)
   padding: 0 10px;
   }
   #about-page h3 { margin-top: 0;
+  }
+  .logo {
+    max-width: 250px;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   } 
 }
 
