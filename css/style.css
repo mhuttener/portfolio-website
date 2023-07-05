@@ -261,6 +261,11 @@ header {
   nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
   }
 
   .navtoggle li:not(:last-child) {
@@ -286,13 +291,10 @@ header {
     color: #4a4a4a;
   }
 
-  .navtoggle.responsive li  {
-    display: block;
-  }
-
   .navtoggle.responsive nav {
     padding: 24px 0 0;
   }
+  
   .navtoggle.responsive li  {
     display: block;
     padding: 10px 0;
@@ -302,6 +304,8 @@ header {
   .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
   }
+
+  
 
   /* ==============================
 Medium devices (640px and larger)
@@ -326,8 +330,10 @@ Medium devices (640px and larger)
   float: left;
   padding: 0 10px;
   }
-  #about-page h3 { margin-top: 0;
+  #about-page h3 { 
+  margin-top: 0;
   }
+
   .logo {
     max-width: 250px;
   }
@@ -339,7 +345,8 @@ Medium devices (640px and larger)
   }
   .navtoggle li:last-child {
     display: none;
-  } 
+  }
+
 }
 
 /* ==============================
