@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
     <link rel="apple-touch-icon" type="image/png" href="img/favicon/apple-touch-icon.png" sizes="180x180">
+    <script src="https://kit.fontawesome.com/ce7a30bd4d.js" crossorigin="anonymous"></script>
     <title>Out N About (OnA) Case Study</title>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -21,14 +22,18 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html"> <img class="logo" src="img/svg/logo.svg" alt="Logo MH"> </a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"> <img class="logo" src="img/svg/logo.svg" alt="Logo MH"> </a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
     </header>
@@ -413,6 +418,8 @@
             <p>Copyright Mário Hüttener 2023</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
