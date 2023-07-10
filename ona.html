@@ -1,426 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="apple-touch-icon" type="image/png" href="img/favicon/apple-touch-icon.png" sizes="180x180">
-    <script src="https://kit.fontawesome.com/ce7a30bd4d.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    >
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="img/favicon/apple-touch-icon.png"
+      sizes="180x180"
+    >
+    <script
+      src="https://kit.fontawesome.com/ce7a30bd4d.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Out N About (OnA) Case Study</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    >
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <a href="index.html"> <img class="logo" src="img/svg/logo.svg" alt="Logo MH"> </a>
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img class="logo" src="img/svg/logo.svg" alt="Logo MH">
+          </a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
+      </div>
     </header>
 
     <main>
-        <div id="hero"><!--CONTAINER-->
-            <div class="container"><!--COLUMN-->
-                <div><!--ONA Header-->
-                    <h1>Out N About | OnA</h1>
-                    <h2>Responsive web app for event location-based</h2>
-                    <h3>UX/UI Design | Research | Branding | Wireframing | Prototyping</h3>
-                    <picture>
-                        <source srcset="img/ona_img/OnA_header@600px.png" media="(max-width:767px)">
-                        <img src="img/ona_img/OnA_header@600px.png" alt="OnA Header Picture">
-                    </picture>
-                    <h3>Background</h3>
-                    <p>I started this project inspired to create a seamless and enjoyable experience for users when
-                        discovering and acquiring event tickets.</p>
-                    <p>I recognized that the current process can often be frustrating and wanted to address the
-                        underlying issues that were causing this.</p>
-                    <p>After conducting thorough research, I identified several key problems that were contributing to
-                        the poor user experience, such as limited payment options, inadequate customer support, and
-                        cumbersome login/sign-in procedures.</p>
-                </div>
-                <div><!--About-->
-                    <h3>About | OnA</h3>
-                    <p>Out and About - OnA - is a responsive web application that helps users discover events and
-                        activities nearby and simplifies ticket purchases. The app provides real-time information about
-                        events and activities based on the user's location.</p>
-                    <h3>Objective</h3>
-                    <p>Provide a seamless booking and payment process and offer personalized events recommendations.</p>
-                    <p>Help users discover nearby events and activities that match their interests and preferences.</p>
-                    <picture>
-                        <source srcset="img/ona_img/Disc jockey2@600px.png" media="(max-width:767px)">
-                        <img src="img/ona_img/Disc jockey2@600px.png" alt="Disc Jockey">
-                    </picture>
-                </div>
-                <div><!--Research-->
-                    <h3>Research</h3>
-                    <h4>Goals</h4>
-                    <p>Below are the areas I’d like to explore during the user research. I want to understand:</p>
-                    <ol>
-                        <li>The patterns behind the event ticket purchasing process.</li>
-                        <li>What are the user’s motivations behind attending specific events and purchasing tickets?
-                        </li>
-                        <li>The context in which the users seek information on events and ticket details.</li>
-                        <li>The user’s goals when using an event-location-based app for ticket acquisition, such as
-                            finding events with available tickets, comparing prices, and accessing tickets after
-                            purchase.</li>
-                    </ol>
-                    <h4>Methodologies</h4>
-                    <p>Competitor research</p>
-                    <p>I researched competitors such as Dice and TripAdvisor, and utilized user psychology techniques. I
-                        also conducted a SWOT analysis and evaluated UX for the project.</p>
-                    <p>User research</p>
-                    <p>I conducted user interviews to investigate the pain points, goals, response patterns, and
-                        noteworthy quotes from users when using an online platform to discover a new event.</p>
-                    <p>User personas</p>
-                    <p>To better understand user groups, I created fictional representations that captured the essence
-                        of their demographics, end goals, pain points, and quotes. These representations included
-                        scenarios that provided insight into the users' experiences.</p>
-                    <picture>
-                        <source srcset="img/ona_img/dj_session2@600px.png" media="(max-width:767px)">
-                        <img src="img/ona_img/dj_session2@600px.png" alt="Dj Session">
-                    </picture>
-                    <h3>Hypothesis</h3>
-                    <p>People who often attend events can use an event-based location app to find, organize, and get to
-                        events. This app helps them save time and effort by providing all the necessary information in
-                        one place.</p>
-                    <h3>Research Synopsis</h3>
-                    <p>I was surprised to learn that most of the users (even experienced event-goers) tend to make
-                        spontaneous decisions when it comes to attending events and purchasing tickets. </p>
-                    <p>They are often influenced by external factors, such as social media ads, last-minute plans with
-                        friends, or stumbling upon an event while browsing event-location-based apps. </p>
-                    <p>This led me to discover that what would help the users to set themselves up for long-term
-                        success, would be to provide them with better information and tools to make informed decisions
-                        before purchasing tickets, such as event details, location, price, and reviews.</p>
+      <div id="hero">
+        <!--CONTAINER-->
+        <div class="container">
+          <!--COLUMN-->
+          <div>
+            <!--ONA Header-->
+            <h1>Out N About | OnA</h1>
+            <h2>Responsive web app for event location-based</h2>
+            <h3>
+              UX/UI Design | Research | Branding | Wireframing | Prototyping
+            </h3>
+            <picture>
+              <source
+                srcset="img/ona_img/OnA_header@600px.png"
+                media="(max-width:767px)"
+              >
+              <img
+                src="img/ona_img/OnA_header@600px.png"
+                alt="OnA Header Picture"
+              >
+            </picture>
+            <h3>Background</h3>
+            <p>
+              I started this project inspired to create a seamless and enjoyable
+              experience for users when discovering and acquiring event tickets.
+            </p>
+            <p>
+              I recognized that the current process can often be frustrating and
+              wanted to address the underlying issues that were causing this.
+            </p>
+            <p>
+              After conducting thorough research, I identified several key
+              problems that were contributing to the poor user experience, such
+              as limited payment options, inadequate customer support, and
+              cumbersome login/sign-in procedures.
+            </p>
+          </div>
+          <div>
+            <!--About-->
+            <h3>About | OnA</h3>
+            <p>
+              Out and About - OnA - is a responsive web application that helps
+              users discover events and activities nearby and simplifies ticket
+              purchases. The app provides real-time information about events and
+              activities based on the user's location.
+            </p>
+            <h3>Objective</h3>
+            <p>
+              Provide a seamless booking and payment process and offer
+              personalized events recommendations.
+            </p>
+            <p>
+              Help users discover nearby events and activities that match their
+              interests and preferences.
+            </p>
+            <picture>
+              <source
+                srcset="img/ona_img/Disc_jockey2@600px.png"
+                media="(max-width:767px)"
+              >
+              <img src="img/ona_img/Disc_jockey2@600px.png" alt="Disc Jockey">
+            </picture>
+          </div>
+          <div>
+            <!--Research-->
+            <h3>Research</h3>
+            <h4>Goals</h4>
+            <p>
+              Below are the areas I’d like to explore during the user research.
+              I want to understand:
+            </p>
+            <ol>
+              <li>The patterns behind the event ticket purchasing process.</li>
+              <li>
+                What are the user’s motivations behind attending specific events
+                and purchasing tickets?
+              </li>
+              <li>
+                The context in which the users seek information on events and
+                ticket details.
+              </li>
+              <li>
+                The user’s goals when using an event-location-based app for
+                ticket acquisition, such as finding events with available
+                tickets, comparing prices, and accessing tickets after purchase.
+              </li>
+            </ol>
+            <h4>Methodologies</h4>
+            <p>Competitor research</p>
+            <p>
+              I researched competitors such as Dice and TripAdvisor, and
+              utilized user psychology techniques. I also conducted a SWOT
+              analysis and evaluated UX for the project.
+            </p>
+            <p>User research</p>
+            <p>
+              I conducted user interviews to investigate the pain points, goals,
+              response patterns, and noteworthy quotes from users when using an
+              online platform to discover a new event.
+            </p>
+            <p>User personas</p>
+            <p>
+              To better understand user groups, I created fictional
+              representations that captured the essence of their demographics,
+              end goals, pain points, and quotes. These representations included
+              scenarios that provided insight into the users' experiences.
+            </p>
+            <picture>
+              <source
+                srcset="img/ona_img/dj_session2@600px.png"
+                media="(max-width:767px)"
+              >
+              <img src="img/ona_img/dj_session2@600px.png" alt="Dj Session">
+            </picture>
+            <h3>Hypothesis</h3>
+            <p>
+              People who often attend events can use an event-based location app
+              to find, organize, and get to events. This app helps them save
+              time and effort by providing all the necessary information in one
+              place.
+            </p>
+            <h3>Research Synopsis</h3>
+            <p>
+              I was surprised to learn that most of the users (even experienced
+              event-goers) tend to make spontaneous decisions when it comes to
+              attending events and purchasing tickets.
+            </p>
+            <p>
+              They are often influenced by external factors, such as social
+              media ads, last-minute plans with friends, or stumbling upon an
+              event while browsing event-location-based apps.
+            </p>
+            <p>
+              This led me to discover that what would help the users to set
+              themselves up for long-term success, would be to provide them with
+              better information and tools to make informed decisions before
+              purchasing tickets, such as event details, location, price, and
+              reviews.
+            </p>
+          </div>
+          <div>
+            <div>
+              <!--MAX-->
+              <h3>User Personas</h3>
+              <h4>Max</h4>
+              <p>
+                Max is a Ph.D. scientific researcher who enjoys attending
+                sporting events, concerts, and theater shows. He loves the sense
+                of community that these events bring, as well as the new people
+                and conversations that come along with them.
+              </p>
+              <h4>Age: 47</h4>
+              <h4>Location: Barcelona, Spain</h4>
+              <h4>Job: Biochemistry</h4>
+              <h4>Status: Married</h4>
+              <picture>
+                <source
+                  srcset="img/ona_img/max2@600px-min.png"
+                  media="(max-width:767px)"
+                >
+                <img src="img/ona_img/max2@600px-min.png" alt="Max Picture">
+              </picture>
+              <h4>Needs and Goals</h4>
+              <ul>
+                <li>
+                  To find and attend events in his local area that align with
+                  his interests, such as food and wine festivals, live music
+                  concerts, and cultural events.
+                </li>
+                <li>
+                  To discover new events and experiences that he may not have
+                  known about before.
+                </li>
+                <li>
+                  To stay organized and keep track of events he plans to attend,
+                  as well as those he's interested in for the future.
+                </li>
+                <li>
+                  To connect with friends and network with like-minded
+                  individuals at events.
+                </li>
+              </ul>
+              <h4>Pain Points</h4>
+              <ul>
+                <li>
+                  Difficulty finding events that align with his interests.
+                </li>
+                <li>
+                  Lack of a centralized platform for discovering and tracking
+                  events.
+                </li>
+                <li>
+                  Difficulty coordinating with friends and making plans to
+                  attend events together.
+                </li>
+                <li>
+                  Overwhelming amount of information and options, making it hard
+                  to make decisions on what events to attend.
+                </li>
+              </ul>
+              <h4>Motivations</h4>
+              <ul>
+                <li>To enjoy new experiences and try new things.</li>
+                <li>To socialize with friends and meet new people.</li>
+                <li>
+                  To stay informed about what's going on in his community.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!--DRICA-->
+              <h4>Drica</h4>
+              <p>
+                Drica is a college student who loves attending concerts and
+                festivals, trying new foods and drinks, and using her smartphone
+                to find events and keep track of her plans. She is also an
+                active social media user who loves to share pictures and
+                experiences with her friends.
+              </p>
+              <h4>Age: 19</h4>
+              <h4>Location: Barcelona, Spain</h4>
+              <h4>Job: College Student</h4>
+              <h4>Status: Single</h4>
+              <picture>
+                <source
+                  srcset="img/ona_img/drica2@600px-min.png"
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="img/ona_img/drica2@600px-min.png"
+                  alt="Drica Picture"
+                >
+              </picture>
+              <h4>Needs and Goals</h4>
+              <ul>
+                <li>To stay informed about local events and happenings.</li>
+                <li>To find fun activities to do with her friends.</li>
+                <li>To explore new places and experiences in her city.</li>
+                <li>
+                  To save money by finding discounts and promotions for events.
+                </li>
+              </ul>
+              <h4>Pain Points</h4>
+              <ul>
+                <li>Difficulty finding out about events promptly.</li>
+                <li>
+                  Inability to find events that fit her interests or schedule.
+                </li>
+                <li>The high cost of tickets to popular events.</li>
+                <li>
+                  The hassle of coordinating plans with friends and finding a
+                  group to attend events with.
+                </li>
+              </ul>
+              <h4>Motivations</h4>
+              <ul>
+                <li>A desire for new experiences and memories.</li>
+                <li>
+                  A need for social interaction and connection with others.
+                </li>
+                <li>
+                  A love for trying new things and stepping outside her comfort
+                  zone.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!--MVP Documentation-->
+              <h3>MVP Documentation</h3>
+              <h4>OnA user profile</h4>
+              <p>
+                People who seek events/concerts to fulfill their entertainment
+                needs. Those on a budget search for deals/discounts for the best
+                value. Those with more money look for VIP/exclusive experiences
+                for a better event-going experience.
+              </p>
+              <h4>MVP Objectives for OnA</h4>
+              <ol>
+                <li>
+                  Help users discover nearby events and activities that match
+                  their interests and preferences.
+                </li>
+                <li>
+                  Provide a seamless booking and payment process and offer
+                  personalized events recommendations.
+                </li>
+                <li>
+                  Enable users to share and collaborate with friends and family
+                  events or activities nearby.
+                </li>
+                <li>
+                  Facilitates communication and coordination between event
+                  organizers and attendees and provides real-time updates and
+                  alerts for changes or updates related to scheduled events.
+                </li>
+              </ol>
+            </div>
+            <div>
+              <!--Designing for JTBD-->
+              <h3>Designing for JTBD</h3>
+              <h4>User Needs</h4>
+              <p>
+                When I am looking for something to do, I want to quickly find
+                events near me, so I can plan my day or night out.
+              </p>
+              <ul>
+                <li>Accurate event location information</li>
+                <li>Fast search response time</li>
+                <li>Geolocation-based search functionality</li>
+              </ul>
+              <p>
+                When I find an event I want to attend, I want to easily purchase
+                tickets or make reservations, so I can secure my spot.
+              </p>
+              <ul>
+                <li>Simple and easy ticket purchase process</li>
+                <li>Availability of different payment methods</li>
+                <li>Real-time ticket availability updates</li>
+              </ul>
+              <p>
+                When I am attending an event, I want to be able to receive
+                real-time updates and alerts for any changes or important
+                information, so I can stay informed.
+              </p>
+              <ul>
+                <li>Real-time updates and alerts feature to be available</li>
+                <li>
+                  Ability to receive notifications for any changes or important
+                  information
+                </li>
+                <li>
+                  The system should keep the attendee informed throughout the
+                  event
+                </li>
+              </ul>
+            </div>
+            <div>
+              <!--Mapping the journey-->
+              <h3>Mapping the Journey</h3>
+              <h4>User Flow Diagram</h4>
+              <picture>
+                <source
+                  srcset="img/ona_img/ona_userflow@600px.png"
+                  media="(max-width:767px)"
+                >
+                <img
+                  src="img/ona_img/ona_userflow@600px.png"
+                  alt="OnA User Flow"
+                >
+              </picture>
+            </div>
+            <div>
+              <!--Design System-->
+              <h3>Design System</h3>
+              <p>
+                I developed a Design System that reflects the brand adjectives
+                of OnA. My approach prioritizes a user-centered design, taking
+                into consideration the needs and preferences of OnA's target
+                audience: the event-goers.
+              </p>
+              <p>
+                The OnA brand identity draws inspiration from music, festivals,
+                and social events, which bring people together and create a
+                sense of joy and happiness.
+              </p>
+              <p>
+                By carefully considering the brand's inspiration and translating
+                it into visual design elements, I have developed a design that
+                captures the essence of OnA and creates a memorable user
+                experience.
+              </p>
+              <div>
+                <!--OnA Logo-->
+                <h4>OnA Logo</h4>
+                <p>
+                  The logo for the Out and About web app, which focuses on
+                  events, is designed to capture the excitement and energy of
+                  live music concerts and other events.
+                </p>
+                <p>
+                  The logo's icon represents the expression of joy and
+                  symbolizes the dynamic energy and excitement of attending a
+                  live music event.
+                </p>
+                <picture>
+                  <source
+                    srcset="img/ona_img/ona_logo2@600px.png"
+                    media="(max-width:767px)"
+                  >
+                  <img src="img/ona_img/ona_logo2@600px.png" alt="OnA Logo">
+                </picture>
+              </div>
+              <div>
+                <!--Color Palette-->
+                <h4>Color Palette</h4>
+                <p>
+                  I have created a color palette that features bright and
+                  energetic colors, which help to convey a feeling of excitement
+                  and fun.
+                </p>
+                <picture>
+                  <source
+                    srcset="img/ona_img/ona_palette2@600px.png"
+                    media="(max-width:767px)"
+                  >
+                  <img
+                    src="img/ona_img/ona_palette2@600px.png"
+                    alt="OnA Palette"
+                  >
+                </picture>
+              </div>
+              <div>
+                <!--Typography-->
+                <h4>Typography | Space Grotesk</h4>
+                <p>
+                  In addition, I have used Space Grotesk typography to further
+                  reinforce the brand's identity and to create a cohesive design
+                  that resonates with the target audience.
+                </p>
+                <picture>
+                  <source
+                    srcset="img/ona_img/ona_typography2@600px.png"
+                    media="(max-width:767px)"
+                  >
+                  <img
+                    src="img/ona_img/ona_typography2@600px.png"
+                    alt="OnA Typography"
+                  >
+                </picture>
+              </div>
+              <div>
+                <!--Key UI Elements & Styles-->
+                <h4>Key UI Elements &amp; Styles</h4>
+                <picture>
+                  <source
+                    srcset="img/ona_img/ona_ui2@600px.png"
+                    media="(max-width:767px)"
+                  >
+                  <img
+                    src="img/ona_img/ona_ui2@600px.png"
+                    alt="OnA UI Elements"
+                  >
+                </picture>
+                <div>
+                  <!--Icons-->
+                  <h4>Icons</h4>
+                  <picture>
+                    <source
+                      srcset="img/ona_img/ona_icons2@600px.png"
+                      media="(max-width:767px)"
+                    >
+                    <img
+                      src="img/ona_img/ona_icons2@600px.png"
+                      alt="OnA Icons"
+                    >
+                  </picture>
                 </div>
                 <div>
-                    <div><!--MAX-->
-                        <h3>User Personas</h3>
-                        <h4>Max</h4>
-                        <p>Max is a Ph.D. scientific researcher who enjoys attending sporting events, concerts, and
-                            theater shows. He loves the sense of community that these events bring, as well as the new
-                            people and conversations that come along with them. </p>
-                        <h4>Age: 47</h4>
-                        <h4>Location: Barcelona, Spain</h4>
-                        <h4>Job: Biochemistry</h4>
-                        <h4>Status: Married</h4>
-                        <picture>
-                            <source srcset="img/ona_img/max2@600px-min.png" media="(max-width:767px)">
-                            <img src="img/ona_img/max2@600px-min.png" alt="Max Picture">
-                        </picture>
-                        <h4>Needs and Goals</h4>
-                        <ul>
-                            <li>To find and attend events in his local area that align with his interests, such as food
-                                and wine festivals, live music concerts, and cultural events.</li>
-                            <li>To discover new events and experiences that he may not have known about before.</li>
-                            <li>To stay organized and keep track of events he plans to attend, as well as those he's
-                                interested in for the future.</li>
-                            <li>To connect with friends and network with like-minded individuals at events.</li>
-                        </ul>
-                        <h4>Pain Points</h4>
-                        <ul>
-                            <li>Difficulty finding events that align with his interests.</li>
-                            <li>Lack of a centralized platform for discovering and tracking events.</li>
-                            <li>Difficulty coordinating with friends and making plans to attend events together.</li>
-                            <li>Overwhelming amount of information and options, making it hard to make decisions on what
-                                events to attend.</li>
-                        </ul>
-                        <h4>Motivations</h4>
-                        <ul>
-                            <li>To enjoy new experiences and try new things.</li>
-                            <li>To socialize with friends and meet new people.</li>
-                            <li>To stay informed about what's going on in his community.</li>
-                        </ul>
-                    </div>
-                    <div><!--DRICA-->
-                        <h4>Drica</h4>
-                        <p>Drica is a college student who loves attending concerts and festivals, trying new foods and
-                            drinks, and using her smartphone to find events and keep track of her plans. She is also an
-                            active social media user who loves to share pictures and experiences with her friends. </p>
-                        <h4>Age: 19</h4>
-                        <h4>Location: Barcelona, Spain</h4>
-                        <h4>Job: College Student</h4>
-                        <h4>Status: Single</h4>
-                        <picture>
-                            <source srcset="img/ona_img/drica2@600px-min.png" media="(max-width:767px)">
-                            <img src="img/ona_img/drica2@600px-min.png" alt="Drica Picture">
-                        </picture>
-                        <h4>Needs and Goals</h4>
-                        <ul>
-                            <li>To stay informed about local events and happenings.</li>
-                            <li>To find fun activities to do with her friends.</li>
-                            <li>To explore new places and experiences in her city.</li>
-                            <li>To save money by finding discounts and promotions for events.</li>
-                        </ul>
-                        <h4>Pain Points</h4>
-                        <ul>
-                            <li>Difficulty finding out about events promptly.</li>
-                            <li>Inability to find events that fit her interests or schedule.</li>
-                            <li>The high cost of tickets to popular events.</li>
-                            <li>The hassle of coordinating plans with friends and finding a group to attend events with.
-                            </li>
-                        </ul>
-                        <h4>Motivations</h4>
-                        <ul>
-                            <li>A desire for new experiences and memories.</li>
-                            <li>A need for social interaction and connection with others.</li>
-                            <li>A love for trying new things and stepping outside her comfort zone.</li>
-                        </ul>
-                    </div>
-                    <div><!--MVP Documentation-->
-                        <h3>MVP Documentation</h3>
-                        <h4>OnA user profile</h4>
-                        <p>People who seek events/concerts to fulfill their entertainment needs. Those on a budget
-                            search for deals/discounts for the best value. Those with more money look for VIP/exclusive
-                            experiences for a better event-going experience.</p>
-                        <h4>MVP Objectives for OnA</h4>
-                        <ol>
-                            <li>Help users discover nearby events and activities that match their interests and
-                                preferences.</li>
-                            <li>Provide a seamless booking and payment process and offer personalized events
-                                recommendations.</li>
-                            <li>Enable users to share and collaborate with friends and family events or activities
-                                nearby.</li>
-                            <li>Facilitates communication and coordination between event organizers and attendees and
-                                provides real-time updates and alerts for changes or updates related to scheduled
-                                events.</li>
-                        </ol>
-                    </div>
-                    <div><!--Designing for JTBD-->
-                        <h3>Designing for JTBD</h3>
-                        <h4>User Needs</h4>
-                        <p>When I am looking for something to do, I want to quickly find events near me, so I can plan
-                            my day or night out.</p>
-                        <ul>
-                            <li>Accurate event location information</li>
-                            <li>Fast search response time</li>
-                            <li>Geolocation-based search functionality</li>
-                        </ul>
-                        <p>When I find an event I want to attend, I want to easily purchase tickets or make
-                            reservations, so I can secure my spot.</p>
-                        <ul>
-                            <li>Simple and easy ticket purchase process</li>
-                            <li>Availability of different payment methods</li>
-                            <li>Real-time ticket availability updates</li>
-                        </ul>
-                        <p>When I am attending an event, I want to be able to receive real-time updates and alerts for
-                            any changes or important information, so I can stay informed.</p>
-                        <ul>
-                            <li>Real-time updates and alerts feature to be available</li>
-                            <li>Ability to receive notifications for any changes or important information</li>
-                            <li>The system should keep the attendee informed throughout the event</li>
-                        </ul>
-                    </div>
-                    <div><!--Mapping the journey-->
-                        <h3>Mapping the Journey</h3>
-                        <h4>User Flow Diagram </h4>
-                        <picture>
-                            <source srcset="img/ona_img/ona_userflow@600px.png" media="(max-width:767px)">
-                            <img src="img/ona_img/ona_userflow@600px.png" alt="OnA User Flow">
-                        </picture>
-                    </div>
-                    <div><!--Design System-->
-                        <h3>Design System</h3>
-                        <p>I developed a Design System that reflects the brand adjectives of OnA. My approach
-                            prioritizes a user-centered design, taking into consideration the needs and preferences of
-                            OnA's target audience: the event-goers.</p>
-                        <p>The OnA brand identity draws inspiration from music, festivals, and social events, which
-                            bring people together and create a sense of joy and happiness.</p>
-                        <p>By carefully considering the brand's inspiration and translating it into visual design
-                            elements, I have developed a design that captures the essence of OnA and creates a memorable
-                            user experience.</p>
-                        <div><!--OnA Logo-->
-                            <h4>OnA Logo</h4>
-                            <p>The logo for the Out and About web app, which focuses on events, is designed to capture
-                                the excitement and energy of live music concerts and other events.</p>
-                            <p>The logo's icon represents the expression of joy and symbolizes the dynamic energy and
-                                excitement of attending a live music event.</p>
-                            <picture>
-                                <source srcset="img/ona_img/ona_logo2@600px.png" media="(max-width:767px)">
-                                <img src="img/ona_img/ona_logo2@600px.png" alt="OnA Logo">
-                            </picture>
-                        </div>
-                        <div><!--Color Palette-->
-                            <h4>Color Palette</h4>
-                            <p>I have created a color palette that features bright and energetic colors, which help to
-                                convey a feeling of excitement and fun.</p>
-                            <picture>
-                                <source srcset="img/ona_img/ona_palette2@600px.png" media="(max-width:767px)">
-                                <img src="img/ona_img/ona_palette2@600px.png" alt="OnA Palette">
-                            </picture>
-                        </div>
-                        <div><!--Typography-->
-                            <h4>Typography | Space Grotesk</h4>
-                            <p>In addition, I have used Space Grotesk typography to further reinforce the brand's
-                                identity and to create a cohesive design that resonates with the target audience.</p>
-                            <picture>
-                                <source srcset="img/ona_img/ona_typography2@600px.png" media="(max-width:767px)">
-                                <img src="img/ona_img/ona_typography2@600px.png" alt="OnA Typography">
-                            </picture>
-                        </div>
-                        <div><!--Key UI Elements & Styles-->
-                            <h4>Key UI Elements &amp; Styles</h4>
-                            <picture>
-                                <source srcset="img/ona_img/ona_ui2@600px.png" media="(max-width:767px)">
-                                <img src="img/ona_img/ona_ui2@600px.png" alt="OnA UI Elements">
-                            </picture>
-                            <div><!--Icons-->
-                                <h4>Icons</h4>
-                                <picture>
-                                    <source srcset="img/ona_img/ona_icons2@600px.png" media="(max-width:767px)">
-                                    <img src="img/ona_img/ona_icons2@600px.png" alt="OnA Icons">
-                                </picture>
-                            </div>
-                            <div><!--Imagery-->
-                                <h4>Imagery</h4>
-                                <picture>
-                                    <source srcset="img/ona_img/ona_imagery@600px.png" media="(max-width:767px)">
-                                    <img src="img/ona_img/ona_imagery@600px.png" alt="OnA Imagery">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
+                  <!--Imagery-->
+                  <h4>Imagery</h4>
+                  <picture>
+                    <source
+                      srcset="img/ona_img/ona_imagery@600px.png"
+                      media="(max-width:767px)"
+                    >
+                    <img
+                      src="img/ona_img/ona_imagery@600px.png"
+                      alt="OnA Imagery"
+                    >
+                  </picture>
                 </div>
+              </div>
             </div>
-            <div class="container"><!--Mid-fi Wireframes-->
-                <h3>Mid-fi Wireframes</h3>
-                <p>The initial set of mid-fidelity wireframes enabled me to conduct early usability testing and identify
-                    the critical changes that must be made immediately.</p>
-                <p>This approach reduced the number of iterations required for subsequent versions, allowing us to focus
-                    our efforts on developing a high-fidelity interface that delivers an outstanding user experience.
-                </p>
-                <h4>Task - JTBD 1</h4>
-                <p>When I am looking for something to do, I want to quickly find events near me, so I can plan my day or
-                    night out.</p>
-                <picture>
-                    <source srcset="img/ona_img/ona_imagery@600px.png" media="(max-width:767px)">
-                    <img src="img/ona_img/ona_mid2@600px.png" alt="OnA Mid-Fi Wireframes">
-                </picture>
-            </div>
-            <div class="container"><!--Prototype and Test-->
-                <h3>Prototype &amp; Test</h3>
-                <h4>Hi-fi Prototype</h4>
-                <a href="https://www.figma.com/proto/iwKNAhx9McQrtLSMiQQeOb/Out-N-About?page-id=166%3A15619&type=design&node-id=166-15786&viewport=1407%2C-251%2C0.13&scaling=scale-down&starting-point-node-id=166%3A15786"
-                    class="button contact" target="_blank">Prototype</a>
-                <picture>
-                    <source srcset="img/ona_img/ona_hifi2@600px-min.png" media="(max-width:767px)">
-                    <img src="img/ona_img/ona_hifi2@600px-min.png" alt="OnA Hi-Fi Wireframes">
-                </picture>
-            </div>
-            <div class="container"><!--Usability Testing-->
-                <h4>Usability Testing</h4>
-                <p>I tested the first version of the prototype with 5 users to determine the necessary revisions to make
-                    the overall experience more intuitive and pleasant. Here are some outtakes.</p>
-                <picture>
-                    <source srcset="img/ona_img/ona_usability2@600px.png" media="(max-width:767px)">
-                    <img src="img/ona_img/ona_usability2@600px.png" alt="ONA Usability Result">
-                </picture>
-                <p>Main pain points that were discovered during the tests and addressed in the iteration:</p>
-                <ul>
-                    <li>Users had difficulties interpreting some of the prompts on the onboarding page. Fix: Simplified
-                        the registration process by reducing the number of required fields.</li>
-                    <li>Users encountered instances where event information, such as dates, times, or locations, was
-                        inconsistent or missing, leading to confusion. Fix: Improved data consistency and accuracy.</li>
-                    <li>Some users found the ticket selection process confusing or cumbersome, especially when events
-                        offered multiple ticket types. Fix: Provided clear and concise ticket descriptions.</li>
-                </ul>
-            </div>
-            <div class="container"><!--Mockups1-->
-                <h3>Mockups</h3>
-                <picture>
-                    <source srcset="img/ona_img/one_mockup2@600px-min.png" media="(max-width:767px)">
-                    <img src="img/ona_img/one_mockup2@600px-min.png" alt="ONA Mockups">
-                </picture>
-            </div>
-            <div class="container"><!--Mockups2-->
-                <picture>
-                    <source srcset="img/ona_img/2_mockup2@600px-min.png" media="(max-width:767px)">
-                    <img src="img/ona_img/2_mockup2@600px-min.png" alt="ONA Mockups">
-                </picture>
-            </div>
-            <div class="container"><!--Mockups3-->
-                <picture>
-                    <source srcset="img/ona_img/3_mockup2@600px-min.png" media="(max-width:767px)">
-                    <img src="img/ona_img/3_mockup2@600px.png" alt="ONA Mockups">
-                </picture>
-            </div>
-            <div class="container"><!--Mockups4-->
-                <picture>
-                    <source srcset="img/ona_img/4_mockup2@600px-min.png" media="(max-width:767px)">
-                    <img src="img/ona_img/4_mockup2@600px.png" alt="ONA Mockups">
-                </picture>
-            </div>
-            <div class="container"><!--Mockups5-->
-                <picture>
-                    <source srcset="img/ona_img/5_mockup2@600px-min.png" media="(max-width:767px)">
-                    <img src="img/ona_img/5_mockup2@600px.png" alt="ONA Mockups">
-                </picture>
-            </div>
-            <div class="container"><!--Final Considerations-->
-                <h3>Final Considerations</h3>
-                <p>Throughout the project, I was responsible for both the UX and UI aspects. I conducted extensive
-                    research and rigorous testing to gather valuable insights and feedback.</p>
-                <p>To decide on the MVP features and functionality, I started by understanding the project's goals and
-                    priorities. I identified the core objectives and needs of the users, and then assessed which
-                    features and functionality were essential to achieving those objectives. I prioritized those
-                    features based on their importance to the project's success and the users' needs.</p>
-                <p>Additionally, I solicited feedback from users to ensure that I was on the right track and made any
-                    necessary adjustments. By following this process, I was able to develop an MVP that was both
-                    functional and met the needs of the project and its users.</p>
-                <p>Finally, I curated my findings and work, ensuring that everything was clearly documented and
-                    presented in a visually appealing and easy-to-understand format.</p>
-            </div>
-            <div class="container">
-                <h4>Tools Used</h4>
-                <picture>
-                    <source srcset="img/ona_img/tools2@.png" media="(max-width:767px)">
-                    <img class="tools" src="img/ona_img/tools2@.png" alt="Tools Used">
-                </picture>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <!--Mid-fi Wireframes-->
+          <h3>Mid-fi Wireframes</h3>
+          <p>
+            The initial set of mid-fidelity wireframes enabled me to conduct
+            early usability testing and identify the critical changes that must
+            be made immediately.
+          </p>
+          <p>
+            This approach reduced the number of iterations required for
+            subsequent versions, allowing us to focus our efforts on developing
+            a high-fidelity interface that delivers an outstanding user
+            experience.
+          </p>
+          <h4>Task - JTBD 1</h4>
+          <p>
+            When I am looking for something to do, I want to quickly find events
+            near me, so I can plan my day or night out.
+          </p>
+          <picture>
+            <source
+              srcset="img/ona_img/ona_imagery@600px.png"
+              media="(max-width:767px)"
+            >
+            <img
+              src="img/ona_img/ona_mid2@600px.png"
+              alt="OnA Mid-Fi Wireframes"
+            >
+          </picture>
+        </div>
+        <div class="container">
+          <!--Prototype and Test-->
+          <h3>Prototype &amp; Test</h3>
+          <h4>Hi-fi Prototype</h4>
+          <a
+            href="https://www.figma.com/proto/iwKNAhx9McQrtLSMiQQeOb/Out-N-About?page-id=166%3A15619&type=design&node-id=166-15786&viewport=1407%2C-251%2C0.13&scaling=scale-down&starting-point-node-id=166%3A15786"
+            class="button contact"
+            target="_blank"
+            >Prototype</a
+          >
+          <picture>
+            <source
+              srcset="img/ona_img/ona_hifi2@600px-min.png"
+              media="(max-width:767px)"
+            >
+            <img
+              src="img/ona_img/ona_hifi2@600px-min.png"
+              alt="OnA Hi-Fi Wireframes"
+            >
+          </picture>
+        </div>
+        <div class="container">
+          <!--Usability Testing-->
+          <h4>Usability Testing</h4>
+          <p>
+            I tested the first version of the prototype with 5 users to
+            determine the necessary revisions to make the overall experience
+            more intuitive and pleasant. Here are some outtakes.
+          </p>
+          <picture>
+            <source
+              srcset="img/ona_img/ona_usability2@600px.png"
+              media="(max-width:767px)"
+            >
+            <img
+              src="img/ona_img/ona_usability2@600px.png"
+              alt="ONA Usability Result"
+            >
+          </picture>
+          <p>
+            Main pain points that were discovered during the tests and addressed
+            in the iteration:
+          </p>
+          <ul>
+            <li>
+              Users had difficulties interpreting some of the prompts on the
+              onboarding page. Fix: Simplified the registration process by
+              reducing the number of required fields.
+            </li>
+            <li>
+              Users encountered instances where event information, such as
+              dates, times, or locations, was inconsistent or missing, leading
+              to confusion. Fix: Improved data consistency and accuracy.
+            </li>
+            <li>
+              Some users found the ticket selection process confusing or
+              cumbersome, especially when events offered multiple ticket types.
+              Fix: Provided clear and concise ticket descriptions.
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <!--Mockups1-->
+          <h3>Mockups</h3>
+          <picture>
+            <source
+              srcset="img/ona_img/one_mockup2@600px-min.png"
+              media="(max-width:767px)"
+            >
+            <img
+              src="img/ona_img/one_mockup2@600px-min.png"
+              alt="ONA Mockups"
+            >
+          </picture>
+        </div>
+        <div class="container">
+          <!--Mockups2-->
+          <picture>
+            <source
+              srcset="img/ona_img/2_mockup2@600px-min.png"
+              media="(max-width:767px)"
+            >
+            <img src="img/ona_img/2_mockup2@600px-min.png" alt="ONA Mockups">
+          </picture>
+        </div>
+        <div class="container">
+          <!--Mockups3-->
+          <picture>
+            <source
+              srcset="img/ona_img/3_mockup2@600px-min.png"
+              media="(max-width:767px)"
+            >
+            <img src="img/ona_img/3_mockup2@600px.png" alt="ONA Mockups">
+          </picture>
+        </div>
+        <div class="container">
+          <!--Mockups4-->
+          <picture>
+            <source
+              srcset="img/ona_img/4_mockup2@600px-min.png"
+              media="(max-width:767px)"
+            >
+            <img src="img/ona_img/4_mockup2@600px.png" alt="ONA Mockups">
+          </picture>
+        </div>
+        <div class="container">
+          <!--Mockups5-->
+          <picture>
+            <source
+              srcset="img/ona_img/5_mockup2@600px-min.png"
+              media="(max-width:767px)"
+            >
+            <img src="img/ona_img/5_mockup2@600px.png" alt="ONA Mockups">
+          </picture>
+        </div>
+        <div class="container">
+          <!--Final Considerations-->
+          <h3>Final Considerations</h3>
+          <p>
+            Throughout the project, I was responsible for both the UX and UI
+            aspects. I conducted extensive research and rigorous testing to
+            gather valuable insights and feedback.
+          </p>
+          <p>
+            To decide on the MVP features and functionality, I started by
+            understanding the project's goals and priorities. I identified the
+            core objectives and needs of the users, and then assessed which
+            features and functionality were essential to achieving those
+            objectives. I prioritized those features based on their importance
+            to the project's success and the users' needs.
+          </p>
+          <p>
+            Additionally, I solicited feedback from users to ensure that I was
+            on the right track and made any necessary adjustments. By following
+            this process, I was able to develop an MVP that was both functional
+            and met the needs of the project and its users.
+          </p>
+          <p>
+            Finally, I curated my findings and work, ensuring that everything
+            was clearly documented and presented in a visually appealing and
+            easy-to-understand format.
+          </p>
+        </div>
+        <div class="container">
+          <h4>Tools Used</h4>
+          <picture>
+            <source
+              srcset="img/ona_img/tools2@.png"
+              media="(max-width:767px)"
+            >
+            <img class="tools" src="img/ona_img/tools2@.png" alt="Tools Used">
+          </picture>
+        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-        </div>
-        <div class="row">
-            <a href="mailto:mhuttener@gmail.com" class="button contact">Email me</a>
-        </div>
-        <div cid="linkedin">
-            <ul>
-                <li><a href="https://www.behance.net/mhuttener" target="_blank">
-                        <img class="social" src="img/svg/behance.svg" alt="Logo Behance"></a></li>
-                <li><a href="https://www.linkedin.com/in/mario-huttener" target="_blank">
-                        <img class="social" src="img/svg/linkedin.svg" alt="Logo Linkedin"></a></li>
-            </ul>
-        </div>
-        <div class="row">
-            <p>Copyright Mário Hüttener 2023</p>
-        </div>
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>
+          Do you like my work and want to discuss opportunities? Please get in
+          touch.
+        </p>
+      </div>
+      <div class="row">
+        <a href="mailto:mhuttener@gmail.com" class="button contact">Email me</a>
+      </div>
+      <div id="linkedin">
+        <ul>
+          <li>
+            <a href="https://www.behance.net/mhuttener" target="_blank">
+              <img class="social" src="img/svg/behance.svg" alt="Logo Behance"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mario-huttener"
+              target="_blank"
+            >
+              <img
+                class="social"
+                src="img/svg/linkedin.svg"
+                alt="Logo Linkedin"
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <p>Copyright Mário Hüttener 2023</p>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
